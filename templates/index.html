@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert AUD to NPR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Convert AUD to NPR</h1>
+    <p>{{ time }}</p>
+    <form method="POST">
+        <label for="npr">Enter AUD:</label>
+        <input type="text" name="npr">
+        <input type="submit" value="Convert">
+    </form>
+
+    {% if aud %}
+    <p>NPR: {{ aud }}</p>
+    {% endif %}
+</body>
+</html>
